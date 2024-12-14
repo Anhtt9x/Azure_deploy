@@ -1,0 +1,13 @@
+prefix=/home/tuananh/Azure_deploy/venv
+exec_prefix=/home/tuananh/Azure_deploy/venv
+libdir=/home/tuananh/Azure_deploy/venv/lib
+sharedlibdir=/home/tuananh/Azure_deploy/venv/lib
+includedir=/home/tuananh/Azure_deploy/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
