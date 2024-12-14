@@ -24,7 +24,7 @@ def handle_form():
         
         headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key), 'azureml-model-deployment': 'myliveproject-yqwte-1' }
 
-        req = urllib.request.Request(url,data,headers)
+        req = urllib.request.Request(url,body,headers)
 
         try:
             response = urllib.request.urlopen(req)
@@ -42,8 +42,6 @@ def handle_form():
     
     else:
         return render_template("chatbot.html")
-
-
 
 
 if __name__ == "__main__":
